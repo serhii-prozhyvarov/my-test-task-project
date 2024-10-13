@@ -70,12 +70,12 @@ export const FooterDivRightName = styled.p`
 
 export const FooterForm = styled.form`
   display: flex;
-  align-items: center; /* Выровнять по центру */
+  align-items: center; 
 `;
 
 export const FooterFormInput = styled.input`
   width: 264px;
-  height: 25px;
+  min-height: 30px;
   padding: 8px 16px;
   margin-right: 24px;
   border: 1px solid rgba(255, 255, 255, 0.3);
