@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://serhii-prozhyvarov.github.io/my-test-task-project/",
   "dependencies": {
+    "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
@@ -38,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@emotion/babel-plugin": "^11.12.0"
   }
 }
