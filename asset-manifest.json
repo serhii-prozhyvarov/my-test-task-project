@@ -1,15 +1,22 @@
 {
   "files": {
     "main.css": "/my-test-task-project/static/css/main.26989300.css",
-    "main.js": "/my-test-task-project/static/js/main.dc89a252.js",
+    "main.js": "/my-test-task-project/static/js/main.f857eb45.js",
+    "static/media/bg-desktop.jpg": "/my-test-task-project/static/media/bg-desktop.3feb318f78efc08412e1.jpg",
     "static/media/sprite.svg": "/my-test-task-project/static/media/sprite.651bd929d21e7a8dd8badbe802e43872.svg",
+    "static/media/online-courses.jpg": "/my-test-task-project/static/media/online-courses.d0e44966954d2a451196.jpg",
+    "static/media/instagram.jpg": "/my-test-task-project/static/media/instagram.396af3c5c4ba3bdd1c5c.jpg",
+    "static/media/taxi-ser.jpg": "/my-test-task-project/static/media/taxi-ser.6c433b78583160909033.jpg",
+    "static/media/cashless-pay.jpg": "/my-test-task-project/static/media/cashless-pay.11f2f6a4cf46ddc17aba.jpg",
+    "static/media/screen-ill.jpg": "/my-test-task-project/static/media/screen-ill.3d729d1682f08024dac8.jpg",
+    "static/media/org-food.jpg": "/my-test-task-project/static/media/org-food.b839bed1aa3cde88516c.jpg",
     "static/media/bank-app.jpg": "/my-test-task-project/static/media/bank-app.5d5ebacd7ee7160c81bd.jpg",
     "index.html": "/my-test-task-project/index.html",
     "main.26989300.css.map": "/my-test-task-project/static/css/main.26989300.css.map",
-    "main.dc89a252.js.map": "/my-test-task-project/static/js/main.dc89a252.js.map"
+    "main.f857eb45.js.map": "/my-test-task-project/static/js/main.f857eb45.js.map"
   },
   "entrypoints": [
     "static/css/main.26989300.css",
-    "static/js/main.dc89a252.js"
+    "static/js/main.f857eb45.js"
   ]
 }
