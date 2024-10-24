@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const PortfolioContainer = styled.div`
-  padding: 96px 0 120px;
+  padding: 48px 0 120px;
 `;
 
 export const ButtonsList = styled.ul`
@@ -38,6 +38,7 @@ export const FilterButton = styled.button`
 `;
 
 export const ExamplesList = styled.ul`
+margin-top:30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -47,11 +48,13 @@ export const ExamplesList = styled.ul`
 `;
 
 export const ExamplesItem = styled.li`
-  flex-basis: calc((100% - 2 * 24px) / 3);
+display: block;
+  flex-basis: calc((100% - 2 * 200px) / 3);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 `;
 
 export const ExamplesLink = styled.a`
+  display: block;
   text-decoration: none;
   color: inherit;
 
@@ -64,17 +67,17 @@ export const ExamplesLink = styled.a`
 
 export const ExamplesWrapper = styled.div`
   position: relative;
-  overflow: hidden;
-`;
+  width:350px;
+  `;
 
 export const ExamplesItemDiv = styled.div`
   padding: 32px 16px;
   transition: box-shadow var(--transition-dur-and-cub);
-`;
+  `;
 
 export const FrequentlyHeader = styled.h2`
   margin: 0;
-`;
+  `;
 
 export const FrequentlyDescription = styled.p`
   margin-top: 8px;

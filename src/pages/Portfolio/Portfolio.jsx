@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   PortfolioContainer,
   ButtonsList,
@@ -12,46 +12,54 @@ import {
   FrequentlyDescription,
 } from './Portfolio.styled';
 
-
-import bankapp from '../../images/portfolio/bank-app.jpg'
+import { examples } from '../../examples';
 
 const Portfolio = () => {
+  const [filter, setFilter] = useState('All');   
+
+  const handleFilterChange = filterType => {
+    setFilter(filterType);
+  };
+
+  const filteredExamples = examples.filter(
+    example => filter === 'All' || example.description === filter
+  );
+
   return (
     <PortfolioContainer>
       <ButtonsList>
-        <li>
-          <FilterButton type="button">All</FilterButton>
-        </li>
-        <li>
-          <FilterButton type="button">Web Site</FilterButton>
-        </li>
-        <li>
-          <FilterButton type="button">App</FilterButton>
-        </li>
-        <li>
-          <FilterButton type="button">Design</FilterButton>
-        </li>
-        <li>
-          <FilterButton type="button">Marketing</FilterButton>
-        </li>
+        {['All', 'Web Site', 'App', 'Design', 'Marketing'].map(filterType => (
+          <li key={filterType}>
+            <FilterButton
+              type="button"
+              onClick={() => handleFilterChange(filterType)}
+            >
+              {filterType}
+            </FilterButton>
+          </li>
+        ))}
       </ButtonsList>
       <ExamplesList>
-        <ExamplesItem>
-          <ExamplesLink href="">
-            <ExamplesWrapper>
-              <img
-                src={bankapp}
-                alt="bank application"
-                width="360"
-                height="300"
-              />
-            </ExamplesWrapper>
-            <ExamplesItemDiv>
-              <FrequentlyHeader>Banking App Interface Concept</FrequentlyHeader>
-              <FrequentlyDescription>App</FrequentlyDescription>
-            </ExamplesItemDiv>
-          </ExamplesLink>
-        </ExamplesItem>
+        {filteredExamples.map((example, index) => (
+          <ExamplesItem key={index}>
+            <ExamplesLink href="">
+              <ExamplesWrapper>
+                <img
+                  src={example.image}
+                  alt={example.alt}
+                  width="360"
+                  height="300"
+                />
+              </ExamplesWrapper>
+              <ExamplesItemDiv>
+                <FrequentlyHeader>{example.title}</FrequentlyHeader>
+                <FrequentlyDescription>
+                  {example.description}
+                </FrequentlyDescription>
+              </ExamplesItemDiv>
+            </ExamplesLink>
+          </ExamplesItem>
+        ))}
       </ExamplesList>
     </PortfolioContainer>
   );

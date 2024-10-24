@@ -4,6 +4,9 @@ export const TaskWrapper = styled.div`
   padding: 40px;
   max-width: 600px;
   margin: 0 auto;
+  min-height: 1000px;
+margin-top:50px;
+margin-bottom:50px;
   background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
