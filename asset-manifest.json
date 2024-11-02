@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/my-test-task-project/static/css/main.26989300.css",
-    "main.js": "/my-test-task-project/static/js/main.f857eb45.js",
+    "main.js": "/my-test-task-project/static/js/main.9dc113cb.js",
     "static/media/bg-desktop.jpg": "/my-test-task-project/static/media/bg-desktop.3feb318f78efc08412e1.jpg",
     "static/media/sprite.svg": "/my-test-task-project/static/media/sprite.651bd929d21e7a8dd8badbe802e43872.svg",
+    "static/media/design.jpg": "/my-test-task-project/static/media/design.6a423c8b94d4d4ccee47.jpg",
     "static/media/online-courses.jpg": "/my-test-task-project/static/media/online-courses.d0e44966954d2a451196.jpg",
     "static/media/instagram.jpg": "/my-test-task-project/static/media/instagram.396af3c5c4ba3bdd1c5c.jpg",
     "static/media/taxi-ser.jpg": "/my-test-task-project/static/media/taxi-ser.6c433b78583160909033.jpg",
@@ -11,12 +12,23 @@
     "static/media/screen-ill.jpg": "/my-test-task-project/static/media/screen-ill.3d729d1682f08024dac8.jpg",
     "static/media/org-food.jpg": "/my-test-task-project/static/media/org-food.b839bed1aa3cde88516c.jpg",
     "static/media/bank-app.jpg": "/my-test-task-project/static/media/bank-app.5d5ebacd7ee7160c81bd.jpg",
+    "static/media/mobapp.jpg": "/my-test-task-project/static/media/mobapp.9350777c56112695184f.jpg",
+    "static/media/desktop.jpg": "/my-test-task-project/static/media/desktop.290abf6cd66653048679.jpg",
+    "static/media/astronaut.svg": "/my-test-task-project/static/media/astronaut.b074dd7385901f73d288d500276ea48c.svg",
+    "static/media/instagram.svg": "/my-test-task-project/static/media/instagram.c4ed7f6ad42276b2f72dabf1ab1b541c.svg",
+    "static/media/diagram.svg": "/my-test-task-project/static/media/diagram.695908fe60e2be53058cce46046e339e.svg",
+    "static/media/antenna.svg": "/my-test-task-project/static/media/antenna.7d6375bfc57f7b878a490c8ae710d59b.svg",
+    "static/media/clock.svg": "/my-test-task-project/static/media/clock.dc3cd4bd62f16967e433b200243ea1d6.svg",
     "index.html": "/my-test-task-project/index.html",
+    "static/media/twitter.svg": "/my-test-task-project/static/media/twitter.a13d5815e8ca7cd4c4595d3d03e59a01.svg",
+    "static/media/linkedin.svg": "/my-test-task-project/static/media/linkedin.a5963cad8cdda7e356148adfd0013fc4.svg",
+    "static/media/facebook.svg": "/my-test-task-project/static/media/facebook.2bdc32a9e1c256124f42793074aeb26f.svg",
+    "static/media/vector.svg": "/my-test-task-project/static/media/vector.770fec399a3d792aa37024c885950946.svg",
     "main.26989300.css.map": "/my-test-task-project/static/css/main.26989300.css.map",
-    "main.f857eb45.js.map": "/my-test-task-project/static/js/main.f857eb45.js.map"
+    "main.9dc113cb.js.map": "/my-test-task-project/static/js/main.9dc113cb.js.map"
   },
   "entrypoints": [
     "static/css/main.26989300.css",
-    "static/js/main.f857eb45.js"
+    "static/js/main.9dc113cb.js"
   ]
 }
