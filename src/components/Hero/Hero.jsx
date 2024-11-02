@@ -12,8 +12,10 @@ import {
   Input,
   Textarea,
   SubmitButton,
+  Paragraph,
 } from './Hero.styled';
 
+import { ReactComponent as CloseIcon } from '../../images/svg/vector.svg'; 
 const HeroSection = () => {
   const [isModalOpen, setModalOpen] = useState(false);
 
@@ -38,13 +40,11 @@ const HeroSection = () => {
         <Backdrop>
           <Modal>
             <CloseButton type="button" onClick={closeModal}>
-              <svg className="modal-class-btn-icon" width="8" height="8">
-                <use href="./images/svg/sprite.svg#icon-vector"></use>
-              </svg>
+              <CloseIcon width="16" height="16" />
             </CloseButton>
-            <p className="modal-form-name">
+            <Paragraph className="modal-form-name">
               Leave your contacts and we will call you back
-            </p>
+            </Paragraph>
             <form className="modal-form">
               <FormField>
                 <InputDescription>Name</InputDescription>
@@ -78,10 +78,10 @@ const HeroSection = () => {
                 type="checkbox"
                 className="modal-form-input-policy visually-hidden"
               />
-              <label htmlFor="form_policy" className="modal-form-field-policy">
+              <Paragraph htmlFor="form_policy" className="modal-form-field-policy">
                 I accept the terms and conditions of the &nbsp;
                 <a href="/">Privacy Policy</a>
-              </label>
+              </Paragraph>
               <SubmitButton type="submit">Send</SubmitButton>
             </form>
           </Modal>

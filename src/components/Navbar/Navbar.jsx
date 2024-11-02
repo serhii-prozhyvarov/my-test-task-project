@@ -10,8 +10,6 @@ import {
   Address,
   ContactMail,
   ContactPhoneNumber,
-  SocialList,
-  SocialListLink,
   MobileMenuNav,
   MobileDown,
   MenuNav,
@@ -91,36 +89,6 @@ const Navbar = () => {
                 info@devstudio.com
               </ContactMail>
             </Address>
-            <SocialList>
-              <li>
-                <SocialListLink href="">
-                  <svg width="16" height="16">
-                    <use href="./images/svg/sprite.svg#icon-instagram"></use>
-                  </svg>
-                </SocialListLink>
-              </li>
-              <li>
-                <SocialListLink href="">
-                  <svg width="16" height="16">
-                    <use href="./images/svg/sprite.svg#icon-twitter"></use>
-                  </svg>
-                </SocialListLink>
-              </li>
-              <li>
-                <SocialListLink href="">
-                  <svg width="16" height="16">
-                    <use href="./images/svg/sprite.svg#icon-facebook"></use>
-                  </svg>
-                </SocialListLink>
-              </li>
-              <li>
-                <SocialListLink href="">
-                  <svg width="16" height="16">
-                    <use href="./images/svg/sprite.svg#icon-linkedin"></use>
-                  </svg>
-                </SocialListLink>
-              </li>
-            </SocialList>
           </MobileDown>
         </MobileMenuContainer>
       </MobileMenu>

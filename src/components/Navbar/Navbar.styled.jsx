@@ -71,7 +71,7 @@ export const MenuLink = styled(NavLink)`
     &::after {
       content: '';
       position: absolute;
-      bottom: -8px;
+      bottom: 2px;
       left: 0;
       width: 100%;
       height: 4px;
@@ -164,26 +164,4 @@ export const MobileDown = styled.div`
   width: 100%;
 `;
 
-export const SocialList = styled.ul`
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
-`;
 
-export const SocialListLink = styled.a`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: var(--iris-primary-color);
-  transition: background-color 0.3s;
-
-  &:hover,
-  &:focus {
-    background-color: var(--ocean-pressed-state-color);
-  }
-`;

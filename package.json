@@ -9,6 +9,10 @@
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-router-dom": "^6.27.0",
@@ -42,5 +46,10 @@
   },
   "devDependencies": {
     "@emotion/babel-plugin": "^11.12.0"
-  }
+  },
+  "description": "Acest proiect a fost creat cu ajutorul\r [Create React App](https://github.com/facebook/create-react-app). Pentru prezentări\r și configurarea de funcții suplimentare\r [consultă documentația](https://facebook.github.io/create-react-app/docs/getting-started).",
+  "main": "babel.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

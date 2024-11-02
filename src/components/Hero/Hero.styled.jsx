@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import hero from '../../images/hero/bg-desktop.jpg';
 
 export const HeroContainer = styled.div`
-  width: 100vw;
+  width: 100%;
   min-height: 600px;
   display: flex;
   flex-direction: column;
@@ -78,7 +78,7 @@ export const Backdrop = styled.div`
 export const Modal = styled.div`
   background: white;
   border-radius: 8px;
-  padding: 20px;
+  padding: 25px;
   width: 400px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   position: relative;
@@ -149,3 +149,8 @@ export const SubmitButton = styled.button`
     background: var(--ocean-pressed-state-color);
   }
 `;
+
+export const Paragraph = styled.p`
+padding:10px;
+`
+
