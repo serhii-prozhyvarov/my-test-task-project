@@ -17,18 +17,21 @@ import {
   MenuLink, 
 } from './Navbar.styled';
 
+import email from '../../images/svg/email.svg'
+import phone from '../../images/svg/phone.svg'
+
 const Navbar = () => {
   return (
     <Header>
       <HeaderDiv>
         <Nav>
-          <Logo href="/">
+          <Logo href="/my-test-task-project">
             <span>Web</span>Studio
           </Logo>
           <MenuNav>
             <MenuItem>
               <MenuLink
-                to="/"
+                to="/my-test-task-project"
                 className={({ isActive }) => (isActive ? 'active' : '')}
               >
                 Studio
@@ -47,9 +50,11 @@ const Navbar = () => {
         </Nav>
         <Address>
           <ContactMail href="mailto:info@devstudio.com">
+            <img src={email} />
             info@devstudio.com
           </ContactMail>
           <ContactPhoneNumber href="tel:+110001111111">
+            <img src={phone} />
             +11 (000) 111-11-11
           </ContactPhoneNumber>
         </Address>

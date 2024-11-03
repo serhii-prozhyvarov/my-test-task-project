@@ -12,7 +12,7 @@ const App = () => {
     <AppWrapper>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/my-test-task-project" element={<Home />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/task-management" element={<TaskManagement />} />

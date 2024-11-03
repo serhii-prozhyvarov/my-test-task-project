@@ -5,7 +5,11 @@ import {
   MapContainer,
   ContactsContent,
   LeftSideContact,
+  Link,
 } from './ContactsPage.styled';
+
+import email from '../../images/svg/email.svg'
+import phone from '../../images/svg/phone.svg'
 
 const Contacts = () => {
   return (
@@ -14,11 +18,17 @@ const Contacts = () => {
         <LeftSideContact>
           <ContactItem>
             <h2>Email</h2>
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <Link href="mailto:info@devstudio.com">
+              <img src={email} alt='email'/>
+              info@devstudio.com
+            </Link>
           </ContactItem>
           <ContactItem>
             <h2>Phone</h2>
-            <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+            <Link href="tel:+110001111111">
+              <img src={phone} alt='phone'/>
+              +11 (000) 111-11-11
+            </Link>
           </ContactItem>
           <ContactItem>
             <h2>Address</h2>

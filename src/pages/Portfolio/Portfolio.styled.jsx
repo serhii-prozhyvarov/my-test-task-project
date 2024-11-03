@@ -23,7 +23,7 @@ export const FilterButton = styled.button`
   letter-spacing: 0.04em;
   background: var(--cloud-light-mode-color);
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 10px;
   border: 1px solid var(--corn-flower-accent-color);
   transition: color var(--transition-dur-and-cub),
     background var(--transition-dur-and-cub),

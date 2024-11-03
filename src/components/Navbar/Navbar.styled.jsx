@@ -82,9 +82,12 @@ export const MenuLink = styled(NavLink)`
 `;
 
 export const ContactMail = styled.a`
+  display: flex;
+  justify-content: center;
+  gap:4px;
   font-size: 16px;
   text-decoration: none;
-  font-style:normal;
+  font-style: normal;
   color: var(--slate-body-text-color);
   padding: 24px 0;
   margin-right: 40px;
@@ -97,6 +100,9 @@ export const ContactMail = styled.a`
 `;
 
 export const ContactPhoneNumber = styled.a`
+  display: flex;
+  justify-content: center;
+  gap: 4px;
   font-size: 16px;
   text-decoration: none;
   font-style: normal;

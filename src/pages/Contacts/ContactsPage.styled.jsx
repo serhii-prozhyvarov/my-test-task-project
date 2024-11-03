@@ -59,3 +59,9 @@ export const MapContainer = styled.div`
     border: 1px solid rgba(0, 0, 0, 0.1);
   }
 `;
+
+export const Link = styled.a`
+display:flex;
+gap: 5px;
+/* justify-content: center; */
+`

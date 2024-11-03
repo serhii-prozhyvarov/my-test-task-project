@@ -52,16 +52,17 @@ export const ModalButton = styled.button`
   background: var(--iris-primary-color);
   color: var(--clean-white);
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 12px;
   border: 1px solid transparent;
-  transition: background var(--transition-dur-and-cub);
+  transition: background 0.3s;
   position: relative;
   z-index: 2;
 
-  &:focus {
+  &:hover {
     background: var(--ocean-pressed-state-color);
   }
 `;
+
 export const Backdrop = styled.div`
   position: fixed;
   top: 0;

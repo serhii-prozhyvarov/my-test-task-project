@@ -5,12 +5,25 @@ import {
   Form,
   Input,
   Button,
+  TaskList,
+  DayGroup,
 } from './TaskManagement.styled';
+
+const daysOfWeek = [
+  'Monday',
+  'Tuesday',
+  'Wednesday',
+  'Thursday',
+  'Friday',
+  'Saturday',
+  'Sunday',
+];
 
 const TaskManagement = () => {
   const [task, setTask] = useState('');
   const [day, setDay] = useState('');
   const [tasks, setTasks] = useState([]);
+  const [editingTaskId, setEditingTaskId] = useState(null);
 
   const fetchTasks = async () => {
     const response = await fetch('http://localhost:5000/tasks');
@@ -20,17 +33,39 @@ const TaskManagement = () => {
 
   const handleSubmit = async e => {
     e.preventDefault();
-    const response = await fetch('http://localhost:5000/tasks', {
-      method: 'POST',
+    const method = editingTaskId ? 'PUT' : 'POST';
+    const url = editingTaskId
+      ? `http://localhost:5000/tasks/${editingTaskId}`
+      : 'http://localhost:5000/tasks';
+
+    const response = await fetch(url, {
+      method,
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ description: task, day }),
     });
+
     if (response.ok) {
       const newTask = await response.json();
-      setTasks(prevTasks => [...prevTasks, newTask]);
-      setTask('');
-      setDay('');
+      setTasks(prevTasks => {
+        if (editingTaskId) {
+          return prevTasks.map(t => (t._id === editingTaskId ? newTask : t));
+        }
+        return [...prevTasks, newTask];
+      });
+      resetForm();
     }
+  };
+
+  const resetForm = () => {
+    setTask('');
+    setDay('');
+    setEditingTaskId(null);
+  };
+
+  const handleEdit = task => {
+    setTask(task.description);
+    setDay(task.day);
+    setEditingTaskId(task._id);
   };
 
   const handleDelete = async id => {
@@ -40,41 +75,65 @@ const TaskManagement = () => {
     setTasks(prevTasks => prevTasks.filter(t => t._id !== id));
   };
 
+  const sortedTasks = tasks.sort((a, b) => {
+    return daysOfWeek.indexOf(a.day) - daysOfWeek.indexOf(b.day);
+  });
+
+  const groupedTasks = sortedTasks.reduce((acc, task) => {
+    (acc[task.day] = acc[task.day] || []).push(task);
+    return acc;
+  }, {});
+
   useEffect(() => {
     fetchTasks();
   }, []);
 
   return (
     <TaskWrapper>
-      <h1>Add or Edit Task</h1>
-      <Description>
-        This is a sample of one of our product variants, which utilizes a
-        MongoDB database. With this tool, you can plan tasks for an entire week,
-        ensuring effective time and resource management.
-      </Description>
-      <Form onSubmit={handleSubmit}>
-        <Input
-          type="text"
-          value={task}
-          onChange={e => setTask(e.target.value)}
-          placeholder="Task Description"
-        />
-        <Input
-          type="text"
-          value={day}
-          onChange={e => setDay(e.target.value)}
-          placeholder="Day of the Week"
-        />
-        <Button type="submit">Submit</Button>
-      </Form>
-      <ul>
-        {tasks.map(t => (
-          <li key={t._id}>
-            {t.description} on {t.day}
-            <button onClick={() => handleDelete(t._id)}>Delete</button>
-          </li>
+      <div>
+        <h1>{editingTaskId ? 'Edit Task' : 'Add Task'}</h1>
+        <Description>
+          This tool allows you to plan tasks for an entire week.
+        </Description>
+        <Form onSubmit={handleSubmit}>
+          <select value={day} onChange={e => setDay(e.target.value)} required>
+            <option value="" disabled>
+              Select a day
+            </option>
+            {daysOfWeek.map(day => (
+              <option key={day} value={day}>
+                {day}
+              </option>
+            ))}
+          </select>
+          <Input
+            type="text"
+            value={task}
+            onChange={e => setTask(e.target.value)}
+            placeholder="Task Description"
+            required
+          />
+          <Button type="submit">{editingTaskId ? 'Update' : 'Submit'}</Button>
+        </Form>
+      </div>
+      <TaskList>
+        {Object.keys(groupedTasks).map(day => (
+          <DayGroup key={day}>
+            <h2>{day}</h2>
+            <ul>
+              {groupedTasks[day].map(t => (
+                <li key={t._id}>
+                  {t.description}
+                  <div>
+                    <button onClick={() => handleEdit(t)}>Edit</button>
+                    <button onClick={() => handleDelete(t._id)}>X</button>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </DayGroup>
         ))}
-      </ul>
+      </TaskList>
     </TaskWrapper>
   );
 };
