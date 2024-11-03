@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-test-task-project/static/css/main.26989300.css",
-    "main.js": "/my-test-task-project/static/js/main.9dc113cb.js",
+    "main.js": "/my-test-task-project/static/js/main.878c99d8.js",
     "static/media/bg-desktop.jpg": "/my-test-task-project/static/media/bg-desktop.3feb318f78efc08412e1.jpg",
     "static/media/sprite.svg": "/my-test-task-project/static/media/sprite.651bd929d21e7a8dd8badbe802e43872.svg",
     "static/media/design.jpg": "/my-test-task-project/static/media/design.6a423c8b94d4d4ccee47.jpg",
@@ -22,13 +22,15 @@
     "index.html": "/my-test-task-project/index.html",
     "static/media/twitter.svg": "/my-test-task-project/static/media/twitter.a13d5815e8ca7cd4c4595d3d03e59a01.svg",
     "static/media/linkedin.svg": "/my-test-task-project/static/media/linkedin.a5963cad8cdda7e356148adfd0013fc4.svg",
+    "static/media/phone.svg": "/my-test-task-project/static/media/phone.97f5278b66038cfe0ca09ebe0f79bafd.svg",
+    "static/media/email.svg": "/my-test-task-project/static/media/email.a6c51ce3d53b1e892abfee690f30d822.svg",
     "static/media/facebook.svg": "/my-test-task-project/static/media/facebook.2bdc32a9e1c256124f42793074aeb26f.svg",
     "static/media/vector.svg": "/my-test-task-project/static/media/vector.770fec399a3d792aa37024c885950946.svg",
     "main.26989300.css.map": "/my-test-task-project/static/css/main.26989300.css.map",
-    "main.9dc113cb.js.map": "/my-test-task-project/static/js/main.9dc113cb.js.map"
+    "main.878c99d8.js.map": "/my-test-task-project/static/js/main.878c99d8.js.map"
   },
   "entrypoints": [
     "static/css/main.26989300.css",
-    "static/js/main.9dc113cb.js"
+    "static/js/main.878c99d8.js"
   ]
 }
