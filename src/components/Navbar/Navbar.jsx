@@ -50,11 +50,11 @@ const Navbar = () => {
         </Nav>
         <Address>
           <ContactMail href="mailto:info@devstudio.com">
-            <img src={email} />
+            <img src={email} alt="" />
             info@devstudio.com
           </ContactMail>
           <ContactPhoneNumber href="tel:+110001111111">
-            <img src={phone} />
+            <img src={phone} alt="" />
             +11 (000) 111-11-11
           </ContactPhoneNumber>
         </Address>

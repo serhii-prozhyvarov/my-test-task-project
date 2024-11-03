@@ -19,14 +19,14 @@ const Contacts = () => {
           <ContactItem>
             <h2>Email</h2>
             <Link href="mailto:info@devstudio.com">
-              <img src={email} alt='email'/>
+              <img src={email} alt="" />
               info@devstudio.com
             </Link>
           </ContactItem>
           <ContactItem>
             <h2>Phone</h2>
             <Link href="tel:+110001111111">
-              <img src={phone} alt='phone'/>
+              <img src={phone} alt="" />
               +11 (000) 111-11-11
             </Link>
           </ContactItem>
