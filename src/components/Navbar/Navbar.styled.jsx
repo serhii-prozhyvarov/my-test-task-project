@@ -15,6 +15,7 @@ export const HeaderDiv = styled.div`
 `;
 
 export const Logo = styled.a`
+font-family: var(--secondary-font);
   color: var(--navy-blue-dark-color);
   font-size: 20px;
   text-transform: uppercase;
@@ -40,6 +41,7 @@ export const MenuItem = styled.li`
   &:not(:last-child) {
     margin-right: 40px;
   }
+  
 `;
 
 export const Nav = styled.nav`
@@ -57,11 +59,12 @@ export const MenuLink = styled(NavLink)`
   line-height: 1.5;
   color: var(--navy-blue-dark-color);
   padding: 24px 0;
-  transition: color var(--transition-dur-and-cub);
+   transition: color var(--transition-dur-and-cub),
+    transform var(--transition-dur-and-cub);
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: var(--ocean-pressed-state-color);
+    transform: scale(1.05);
   }
 
   &.active {
@@ -84,18 +87,20 @@ export const MenuLink = styled(NavLink)`
 export const ContactMail = styled.a`
   display: flex;
   justify-content: center;
-  gap:4px;
+  gap: 4px;
   font-size: 16px;
   text-decoration: none;
   font-style: normal;
   color: var(--slate-body-text-color);
   padding: 24px 0;
   margin-right: 40px;
-  transition: color var(--transition-dur-and-cub);
 
-  &:hover,
-  &:focus {
+  transition: color var(--transition-dur-and-cub),
+    transform var(--transition-dur-and-cub);
+
+  &:hover {
     color: var(--ocean-pressed-state-color);
+    transform: scale(1.05);
   }
 `;
 
@@ -108,11 +113,13 @@ export const ContactPhoneNumber = styled.a`
   font-style: normal;
   color: var(--slate-body-text-color);
   padding: 24px 0;
-  transition: color var(--transition-dur-and-cub);
 
-  &:hover,
-  &:focus {
+  transition: color var(--transition-dur-and-cub),
+    transform var(--transition-dur-and-cub);
+
+  &:hover {
     color: var(--ocean-pressed-state-color);
+    transform: scale(1.05);
   }
 `;
 

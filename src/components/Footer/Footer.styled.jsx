@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 export const FooterDiv = styled.div`
   background: var(--navy-blue-dark-color);
-  padding: 100px 0;
+  padding: 80px 0;
 `;
 
 export const Container = styled.div`
@@ -22,6 +22,7 @@ export const DescriptionFooter = styled.p`
 `;
 
 export const FooterLogo = styled.a`
+  font-family: var(--secondary-font);
   color: var(--cloud-light-mode-color);
   font-size: 20px;
   text-transform: uppercase;

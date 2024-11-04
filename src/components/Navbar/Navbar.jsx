@@ -14,7 +14,7 @@ import {
   MobileDown,
   MenuNav,
   Nav,
-  MenuLink, 
+  MenuLink,
 } from './Navbar.styled';
 
 import email from '../../images/svg/email.svg'

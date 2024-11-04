@@ -57,9 +57,12 @@ export const ModalButton = styled.button`
   transition: background 0.3s;
   position: relative;
   z-index: 2;
+  transition: background var(--transition-dur-and-cub),
+    transform var(--transition-dur-and-cub);
 
   &:hover {
     background: var(--ocean-pressed-state-color);
+    transform: scale(1.05);
   }
 `;
 

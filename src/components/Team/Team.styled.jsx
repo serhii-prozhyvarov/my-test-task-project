@@ -65,15 +65,23 @@ export const SocialList = styled.ul`
 `;
 
 export const SocialItem = styled.li`
-background-color: blue;
-display: flex;
-justify-content: center;
-align-items: center;
-border-radius:50%;
-width:35px;
-height: 35px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  transition: background var(--transition-dur-and-cub),
+    transform var(--transition-dur-and-cub);
+
+  &:hover {
+    background: var(--ocean-pressed-state-color);
+    transform: scale(1.05);
+  }
 `;
 
-export const SocialLink = styled.a``;
+export const SocialLink = styled.a`
+`;
 
 export const SocialIcon = styled.svg``;
