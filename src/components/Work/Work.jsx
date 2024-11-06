@@ -1,24 +1,9 @@
 import React from 'react';
 import { Container, Title, List, Item, Image } from './Work.styled';
 
-import desktop from '../../images/benefits/desktop.jpg';
-import mobileApp from '../../images/benefits/mobapp.jpg';
-import design from '../../images/benefits/design.jpg';
+import { workItems } from 'data/workItems';
 
-const workItems = [
-  {
-    src: desktop,
-    alt: 'desktop application',
-  },
-  {
-    src: mobileApp,
-    alt: 'mobile application',
-  },
-  {
-    src: design,
-    alt: 'design for your product',
-  },
-];
+
 
 const Work = () => (
   <Container>

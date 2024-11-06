@@ -8,16 +8,7 @@ import {
   TaskList,
   DayGroup,
 } from './TaskManagement.styled';
-
-const daysOfWeek = [
-  'Monday',
-  'Tuesday',
-  'Wednesday',
-  'Thursday',
-  'Friday',
-  'Saturday',
-  'Sunday',
-];
+import { daysOfWeek } from 'data/daysOfWeek';
 
 const TaskManagement = () => {
   const [task, setTask] = useState('');

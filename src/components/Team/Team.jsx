@@ -13,38 +13,12 @@ import {
   SocialLink,
 } from './Team.styled';
 
-import mark from '../../images/staff/product-d.jpg';
-import tom from '../../images/staff/front-dev.jpg';
-import camila from '../../images/staff/marketing.jpg';
-import daniel from '../../images/staff/designer.jpg';
-
 import { ReactComponent as InstagramIcon } from '../../images/svg/instagram.svg';
 import { ReactComponent as TwitterIcon } from '../../images/svg/twitter.svg';
 import { ReactComponent as FacebookIcon } from '../../images/svg/facebook.svg';
 import { ReactComponent as LinkedInIcon } from '../../images/svg/linkedin.svg';
 
-const teamMembers = [
-  {
-    img: mark,
-    name: 'Mark Guerrero',
-    role: 'Product Designer',
-  },
-  {
-    img: tom,
-    name: 'Tom Ford',
-    role: 'Frontend Developer',
-  },
-  {
-    img: camila,
-    name: 'Camila Garcia',
-    role: 'Marketing',
-  },
-  {
-    img: daniel,
-    name: 'Daniel Wilson',
-    role: 'UI Designer',
-  },
-];
+import { teamMembers } from 'data/teamMembers';
 
 const Team = () => (
   <Container>
