@@ -1,9 +1,20 @@
 {
   "files": {
     "main.css": "/my-test-task-project/static/css/main.ea86042a.css",
-    "main.js": "/my-test-task-project/static/js/main.95f2097a.js",
+    "main.js": "/my-test-task-project/static/js/main.92328189.js",
     "static/media/bg-desktop.jpg": "/my-test-task-project/static/media/bg-desktop.3feb318f78efc08412e1.jpg",
+    "static/media/iPhone 15 Pro.jpg": "/my-test-task-project/static/media/iPhone 15 Pro.4b7deddcc95d4d4cf61a.jpg",
+    "static/media/Ipad.jpg": "/my-test-task-project/static/media/Ipad.174458f4ad16b2c686a7.jpg",
+    "static/media/WH-1000XM5.jpg": "/my-test-task-project/static/media/WH-1000XM5.8bf0e55aa593b16ac980.jpg",
+    "static/media/QLED Q80B.jpg": "/my-test-task-project/static/media/QLED Q80B.e7789b7d7f0ec85ef659.jpg",
+    "static/media/ThinkPad X1 Carbon.jpg": "/my-test-task-project/static/media/ThinkPad X1 Carbon.f03339228d5684962e1f.jpg",
+    "static/media/dell_XPS 13.jpg": "/my-test-task-project/static/media/dell_XPS 13.082242381d7ac2a1e289.jpg",
+    "static/media/MacBook Air M2.jpg": "/my-test-task-project/static/media/MacBook Air M2.489996616c11b5df40e6.jpg",
+    "static/media/Galaxy Tab S8.jpg": "/my-test-task-project/static/media/Galaxy Tab S8.223f1d1497a977ebe1d3.jpg",
     "static/media/sprite.svg": "/my-test-task-project/static/media/sprite.651bd929d21e7a8dd8badbe802e43872.svg",
+    "static/media/MacBook Pro 14.jpg": "/my-test-task-project/static/media/MacBook Pro 14.edb0e76529e5adf47320.jpg",
+    "static/media/Spectre x360 14.jpg": "/my-test-task-project/static/media/Spectre x360 14.3655d09855b33e644ae3.jpg",
+    "static/media/Galaxy S23 Ultra.jpg": "/my-test-task-project/static/media/Galaxy S23 Ultra.be1d0df7805532daf2a7.jpg",
     "static/media/design.jpg": "/my-test-task-project/static/media/design.6a423c8b94d4d4ccee47.jpg",
     "static/media/online-courses.jpg": "/my-test-task-project/static/media/online-courses.d0e44966954d2a451196.jpg",
     "static/media/instagram.jpg": "/my-test-task-project/static/media/instagram.396af3c5c4ba3bdd1c5c.jpg",
@@ -25,12 +36,13 @@
     "static/media/phone.svg": "/my-test-task-project/static/media/phone.97f5278b66038cfe0ca09ebe0f79bafd.svg",
     "static/media/email.svg": "/my-test-task-project/static/media/email.a6c51ce3d53b1e892abfee690f30d822.svg",
     "static/media/facebook.svg": "/my-test-task-project/static/media/facebook.2bdc32a9e1c256124f42793074aeb26f.svg",
+    "static/media/cart.svg": "/my-test-task-project/static/media/cart.d7424084262f03fe47361fd1ab3f1ab2.svg",
     "static/media/vector.svg": "/my-test-task-project/static/media/vector.770fec399a3d792aa37024c885950946.svg",
     "main.ea86042a.css.map": "/my-test-task-project/static/css/main.ea86042a.css.map",
-    "main.95f2097a.js.map": "/my-test-task-project/static/js/main.95f2097a.js.map"
+    "main.92328189.js.map": "/my-test-task-project/static/js/main.92328189.js.map"
   },
   "entrypoints": [
     "static/css/main.ea86042a.css",
-    "static/js/main.95f2097a.js"
+    "static/js/main.92328189.js"
   ]
 }
