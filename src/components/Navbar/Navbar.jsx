@@ -41,10 +41,13 @@ const Navbar = () => {
               <MenuLink to="/portfolio">Portfolio</MenuLink>
             </MenuItem>
             <MenuItem>
-              <MenuLink to="/contacts">Contacts</MenuLink>
+              <MenuLink to="/task-management">Task Management</MenuLink>
             </MenuItem>
             <MenuItem>
-              <MenuLink to="/task-management">Task Management</MenuLink>
+              <MenuLink to="/shop">Shop</MenuLink>
+            </MenuItem>
+            <MenuItem>
+              <MenuLink to="/contacts">Contacts</MenuLink>
             </MenuItem>
           </MenuNav>
         </Nav>
