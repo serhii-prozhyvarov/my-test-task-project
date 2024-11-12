@@ -1,9 +1,9 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { getSelectedCategory } from 'components/redux/productsSlice';
-import { productsData } from '../../data/productsData';
 import Product from './Product';
 import { ProductsWrapper } from './Products.styled';
+import { productsData } from 'data/productsData';
 
 const Products = () => {
   const selectedCategory = useSelector(getSelectedCategory);

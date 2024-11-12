@@ -1,5 +1,10 @@
 import styled from '@emotion/styled';
 
+const primaryColor = '#f7f2f9';
+const borderColor = '#000000';
+const borderRadius = '15px';
+const paddingSize = '20px';
+
 export const CartWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -7,11 +12,12 @@ export const CartWrapper = styled.div`
   padding: 50px;
   width: 330px;
   border-radius: 40px;
+  background-color: ${primaryColor};
 
-  background-color: #eae4ec;
 `;
+
 export const Icon = styled.img`
-  width: 50px;
+  width: 40px;
 `;
 
 export const DeleteIcon = styled.img`
@@ -27,27 +33,30 @@ export const HeadWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid 3px #000000;
+  border: solid 3px ${borderColor};
   border-radius: 30px;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px 20px;
 `;
+
 export const TotalHeader = styled.h2`
   text-align: center;
 `;
 
 export const CartItemInfo = styled.h2`
+  margin-top: 0px;
   font-size: 18px;
+  text-align: center;
 `;
+
 export const CartItemWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: solid 3px #000000;
-  border-radius: 15px;
-  padding: 20px;
+  border: solid 3px ${borderColor};
+  border-radius: ${borderRadius};
+  padding: ${paddingSize};
   margin-bottom: 10px;
+
+width: 220px;
 `;
