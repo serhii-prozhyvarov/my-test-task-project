@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-test-task-project/static/css/main.ea86042a.css",
-    "main.js": "/my-test-task-project/static/js/main.92328189.js",
+    "main.js": "/my-test-task-project/static/js/main.f7125802.js",
     "static/media/bg-desktop.jpg": "/my-test-task-project/static/media/bg-desktop.3feb318f78efc08412e1.jpg",
     "static/media/iPhone 15 Pro.jpg": "/my-test-task-project/static/media/iPhone 15 Pro.4b7deddcc95d4d4cf61a.jpg",
     "static/media/Ipad.jpg": "/my-test-task-project/static/media/Ipad.174458f4ad16b2c686a7.jpg",
@@ -39,10 +39,10 @@
     "static/media/cart.svg": "/my-test-task-project/static/media/cart.d7424084262f03fe47361fd1ab3f1ab2.svg",
     "static/media/vector.svg": "/my-test-task-project/static/media/vector.770fec399a3d792aa37024c885950946.svg",
     "main.ea86042a.css.map": "/my-test-task-project/static/css/main.ea86042a.css.map",
-    "main.92328189.js.map": "/my-test-task-project/static/js/main.92328189.js.map"
+    "main.f7125802.js.map": "/my-test-task-project/static/js/main.f7125802.js.map"
   },
   "entrypoints": [
     "static/css/main.ea86042a.css",
-    "static/js/main.92328189.js"
+    "static/js/main.f7125802.js"
   ]
 }
